@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+body {
+    font: 14px "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('./wood_bg.jpg');
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+
+  li{
+    list-style: none;
+    padding: 0.2rem;
+  }
+
+  .undo{
+    padding: 0.5rem 0.8rem;
+    border-radius: 49px;
+    text-align: center;
+    background-color: rgb(143, 58, 8);
+    color: #fff;
+    border: none;
+    box-shadow: 2px 2px 5px #fff;
+    cursor: pointer;
+  }
+
+  .title{
+    font-size: 2.8rem;
+    color: rgb(85, 33, 2);
+    margin-bottom: 15%;
+  }
+  
+  span { 
+    display: inline-block; 
+    margin-bottom: 5%;
+} 
+
+  .a { 
+    transform: translate(10px, 15px) rotate(30deg); 
+} 
+
+.b { 
+    transform: translate(12px, 25px) rotate(25deg); 
+} 
+
+.c { 
+    transform: translate(15px, 30px) rotate(20deg); 
+} 
+
+.d { 
+    transform: translate(20px, 40px) rotate(10deg); 
+} 
+
+.e { 
+    transform: translate(20px, 40px) rotate(0deg); 
+} 
+
+.f { 
+    transform: translate(20px, 35px) rotate(-15deg); 
+} 
+
+.g { 
+    transform: translate(25px, 25px) rotate(-30deg); 
+} 
+
+.h { 
+    transform: translate(20px, 15px) rotate(-40deg); 
+} 
+
+.i { 
+    transform: translate(10px, -5px) rotate(-50deg); 
+} 
+
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 2rem;
+    color:rgb(85, 33, 2);
+  }
+  
+  .square {
+    background: transparent;
+    border: 5px solid rgb(85, 33, 2);
+    float: left;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 50px;
+    height: 5rem;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 5rem;
+    color: rgb(143, 58, 8);
+  }
+
+  .square::after{
+    border: none;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background:rgb(85, 33, 2);
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .game-info {
+    margin-left: auto;
+    margin-right: auto;
+  }
