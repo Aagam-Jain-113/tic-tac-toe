@@ -170,7 +170,7 @@ function calculateWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      if (squares[a]=='X'){
+      if (squares[a]==='X'){
         return xplayer;
       }
       else{
